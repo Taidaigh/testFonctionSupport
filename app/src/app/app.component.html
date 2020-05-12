@@ -1,0 +1,38 @@
+<div class="blockMessage" *ngFor="let leMessage of this.message;">
+    <div>
+        <p class="entete">
+            <b  class="auteur">{{leMessage.auteur.nom}} {{leMessage.auteur.prenom}}</b> - {{leMessage.date}}
+            <br>
+            {{leMessage.auteur.titreCV}}
+        </p>
+    </div>
+    <p class="hashtag"><b *ngFor="let leTag of this.leMessage.tag;">#{{leTag}} </b></p>
+    <p>{{leMessage.message}}</p>
+    <div class="communauter">
+        <div class="thanx" (click)="cliquer()"> <i class="fas fa-plus-circle"></i>
+            Envoyer un Thanx !
+        </div>
+        <div class="partage" (click)="cliquer()"><i class="fas fa-share"></i>
+            Partager à un ami !
+        </div>
+    </div>
+
+    <div class="entete">
+        <span class="nbCommentaire" *ngIf="leMessage.commentaire.length<=1">{{leMessage.commentaire.length}} commentaire </span>
+        <span class="nbCommentaire" *ngIf="leMessage.commentaire.length>1">{{leMessage.commentaire.length}} commentaires</span>
+        - {{leMessage.nbThanx}} Thanx
+    </div>
+    <hr>
+    <div class="blockCommentaire">
+        
+        <div *ngFor="let leCommentaire of leMessage.commentaire;">
+            <p class="auteur">{{leCommentaire.auteur.nom}} {{leCommentaire.auteur.prenom}}</p>
+            <p>{{leCommentaire.message}}</p>
+            <p class="entete">{{leCommentaire.date}}</p>
+        </div>
+        <div>
+            <p class="AjoutCommentaire">Ajouter un commentaire ...</p>
+        </div>
+    </div>
+
+</div>

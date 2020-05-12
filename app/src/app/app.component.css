@@ -1,0 +1,51 @@
+.blockMessage{
+    background-color: #FFFFFF;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+}
+.auteur{
+    color: #1ba3e1;
+    font-weight: bold;
+}
+
+.entete{
+    color: #9da1a3;
+}
+
+.hashtag{
+    color:#545d61;
+}
+
+.blockCommentaire{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.AjoutCommentaire{
+    background-color: #F5F5F5;
+    color:#9da1a3;
+    margin: 0 10px;
+}
+
+.nbCommentaire{
+    color: #1ba3e1;
+}
+
+.thanx{
+    width:50%;
+}
+
+.partage{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: -20px
+}
+.communauter{
+    color: #9da1a3 ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
